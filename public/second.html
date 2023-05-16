@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .small{
+            color:#333;
+            cursor: pointer;
+
+
+        }
+        
+        .big{
+            color:aquamarine;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body class="small">
+    Hey this is awesome;
+    <script>
+        let body = document.querySelector('body');
+        body.addEventListener('click',()=>{
+            body.setAttribute('class',(body.className=='big')?'small':'big');
+        })
+    </script>
+</body>
+</html>
