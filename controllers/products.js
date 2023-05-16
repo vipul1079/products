@@ -1,8 +1,7 @@
 const express= require('express');
 const fs= require('fs')
 const mongoose= require('mongoose');
-// const data = fs.readFileSync('./data.json','utf-8');
-// const products=JSON.parse(data).products;
+
 const model=require('../models/product')
 const Product=model.Product;
 

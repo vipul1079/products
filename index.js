@@ -23,7 +23,7 @@ app.use('*',(req,res)=>{
 
 
 
-const mongoUri=proccess.env.MONGODB_URI;
+const mongoUri=process.env.MONGODB_URI;
 
 mongoose.connect(mongoUri,{
     useNewUrlParser:true,
