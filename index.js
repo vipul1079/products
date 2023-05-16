@@ -23,7 +23,7 @@ app.use('*',(req,res)=>{
 
 
 
-const mongoUri='mongodb+srv://vipuls:Ux_PFFKM52xLQsA@cluster0.a2g0bqa.mongodb.net/ecommerceDatabase?retryWrites=true&w=majority';
+const mongoUri=proccess.env.MONGODB_URI;
 
 mongoose.connect(mongoUri,{
     useNewUrlParser:true,
