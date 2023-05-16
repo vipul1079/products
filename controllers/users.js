@@ -1,7 +1,7 @@
 const express= require('express');
 const fs= require('fs')
 const path=require('path')
-const data = fs.readFileSync(path.resolve(__dirname,'data.json'),'utf-8');
+const data = fs.readFileSync(path.resolve(__dirname,'../data.json'),'utf-8');
 const users=JSON.parse(data).users;
 
 exports.createUser=(req,res)=>{
